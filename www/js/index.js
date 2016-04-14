@@ -33,7 +33,13 @@ var app = {
     // The scope of 'this' is the event. In order to call the 'receivedEvent'
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
+        setTimeout(function(){
+    //do what you need here
+}, 3000);
         app.receivedEvent('deviceready');
+var ref = cordova.InAppBrowser.open('http://seantheme.com/color-admin-v1.9/admin/html/index_v2.html', '_blank', 'location=no,closebuttoncaption=return to app,toolbar=yes');
+
+
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
