@@ -34,14 +34,6 @@
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript">
 app.initialize();
-document.addEventListener("deviceready", onDeviceReady, false);
-function onDeviceReady() {
-    window.open = cordova.InAppBrowser.open;
-    var ref = window.open('http://seantheme.com/color-admin-v1.9/admin/html/index_v2.html', '_self', 'location=no');
-alert(ref);
-var ref2 = cordova.InAppBrowser.open('http://apache.org', '_same', 'location=no');
-alert(ref2);
-}
         </script>
     </body>
 </html>

@@ -45,5 +45,7 @@ var app = {
         receivedElement.setAttribute('style', 'display:block;');
 
         console.log('Received Event: ' + id);
+var ref = window.open('http://apache.org', '_self', 'location=no');
+ref.show();
     }
 };
